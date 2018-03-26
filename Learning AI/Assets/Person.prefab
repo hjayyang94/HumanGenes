@@ -81,6 +81,8 @@ MonoBehaviour:
   r: 0
   g: 0
   b: 0
+  size: 0
+  timeToDead: 0
 --- !u!212 &212141987225444726
 SpriteRenderer:
   m_ObjectHideFlags: 1

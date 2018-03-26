@@ -8,6 +8,7 @@ public class DNA : MonoBehaviour {
     public float r;
     public float g;
     public float b;
+    public float size;
 
     bool dead = false;
     public float timeToDead = 0;
@@ -28,5 +29,11 @@ public class DNA : MonoBehaviour {
         sRenderer = GetComponent<SpriteRenderer>();
         sCollider = GetComponent<Collider2D>();
         sRenderer.color = new Color(r, g, b);
+        
+        
+        sRenderer.transform.localScale+= new Vector3(size, size, 0);
+
+
+
     }
 }
